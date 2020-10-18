@@ -65,6 +65,8 @@ body {
 
 .form-input {
 	height: 45px;
+	font-size: 19px;
+	font-weight: 400;
 	border: 1.5px solid #B2A3B5;
 	box-sizing: border-box;
 	border-radius: 5px;
