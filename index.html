@@ -33,38 +33,31 @@
                         </form>
                     </div>
 
-                    <div class="search-sort-fields">
+                    <div class="search-sort-count-fields">
 
-                        <div class="search-fields">
-                            <form action="" method="post">
+                        <div class="search-sort-fields">
+                            <div class="search-fields">
                                 <label id="searchName" class="form-name">Search</label>
                                 <br>
-                                <input id="searchInput" class="form-input" type="text" name="name">
-                            </form>
-                        </div>
+                                <input id="searchInput" class="form-input" oninput="findVacancies()" type="text" name="name">
+                            </div>
 
-                        <div class="sort-fields">
-                            <form action="" method="post">
-                                <label id="sortName" class="form-name">Sort</label>
-                                <br>
-                                <select id="sortInput" class="form-input">
-                                    <option id="normalSort" selected>A-Z</option>
-                                    <option id="reverseSort">Z-A</option>
-
-                                </select>
-                            </form>
+                            <div class="sort-buttons">
+                                <button id="sortNamesBtn" class="sort-btn">A-Z 🠗</button>
+                                <button id="sortReverseNamesBtn" class="sort-btn">Z-A 🠕</button>
+                            </div>
                         </div>
-                        <button id="sortNamesBtn">Sort</button>
-                        <button id="sortReverseNamesBtn">SortR</button>
 
                     </div>
 
+                    <div class="counter-salary">
+                        <button id="salaryCounter" class="counter-btn" onclick="countSalary()">Count</button>
+                        <p class="form-name total-text">Total: <span class="total-count" id="totalCount"></span></p>
+                    </div>
 
                 </div>
 
-                <div id="vacancyItems" class="vacancy-items">
-
-                </div>
+                <div id="vacancyItems" class="vacancy-items"> </div>
 
             </div>
         </section>

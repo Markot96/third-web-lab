@@ -85,30 +85,78 @@ body {
 	padding-top: 1px;
 }
 
+.search-sort-count-fields {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 15px;
+}
+
 .search-sort-fields {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	max-width: 380px;
-	margin-top: 15px;
+	align-items: flex-end;
+	width: 380px;
 }
 
 #searchInput {
 	width: 200px;
 }
 
-#sortInput {
-	font-size: 16px;
-	line-height: 19px;
-	color: #373737;
+.sort-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	width: 150px;
-	padding: 0 10px;
+}
+
+.sort-btn {
+	height: 45px;
+	width: 70px;
+	background: #8f3da8;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+	color: #FFFFFF;
+	padding-top: 1px;
+}
+
+
+
+.counter-salary {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.total-text {
+	font-size: 18px;
+	margin-right: 15px;
+	margin-left: 15px;
+	
+}
+
+.counter-btn{
+	width: 100px;
+	height: 45px;
+	background: #afb5a3;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 26px;
+	color: #FFFFFF;
+	padding-top: 1px;
 }
 
 /* panels */
 
 .vacancy-items {
-	height: 430px;
+	height: 380px;
 	width: 100%;
 	overflow-y: scroll;
 	margin-bottom: 25px;
@@ -131,7 +179,7 @@ body {
 .vacancy-panel-info {
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
+	justify-content: space-between;
 	align-items: center;
 	width: 300px;
 }
@@ -142,10 +190,6 @@ body {
 	line-height: 21px;
 	letter-spacing: 0.04em;
 	color: #373737;
-}
-
-#panelInfoText {
-	margin-left: 30px;
 }
 
 .vacancy-panel-buttons {
