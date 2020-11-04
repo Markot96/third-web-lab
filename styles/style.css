@@ -51,16 +51,20 @@ body {
 	font-size: 22px;
 	line-height: 26px;
 	color: #373737;
+	margin-right: 200px;
+}
+
+.form-salary {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	color: #373737;
 }
 
 .lower-position-fields {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-#positionInput {
-	width: 380px;
 }
 
 .form-input {
@@ -70,6 +74,17 @@ body {
 	border: 1.5px solid #B2A3B5;
 	box-sizing: border-box;
 	border-radius: 5px;
+	width: 150px;
+}
+
+.form-input-position {
+	height: 45px;
+	font-size: 19px;
+	font-weight: 400;
+	border: 1.5px solid #B2A3B5;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 200px;
 }
 
 .position-create {
@@ -96,7 +111,15 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 380px;
+	width: 570px;
+}
+
+.position-create-save {
+	background-color: #695e6b;
+}
+
+.search-fields {
+	width: 200px;
 }
 
 #searchInput {
@@ -123,8 +146,6 @@ body {
 	padding-top: 1px;
 }
 
-
-
 .counter-salary {
 	display: flex;
 	flex-direction: row;
@@ -137,10 +158,9 @@ body {
 	font-size: 18px;
 	margin-right: 15px;
 	margin-left: 15px;
-	
 }
 
-.counter-btn{
+.counter-btn {
 	width: 100px;
 	height: 45px;
 	background: #afb5a3;
