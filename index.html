@@ -23,14 +23,17 @@
 
                 <div class="input-form">
                     <div class="position-fields">
-                        <form action="" method="post">
-                            <label id="positionName" class="form-name">Position</label>
-                            <br>
-                            <div class="lower-position-fields">
-                                <input id="positionInput" class="form-input" type="text" name="name">
-                                <input class="position-create" type="submit" value="Create">
-                            </div>
-                        </form>
+
+                        <label id="positionName" class="form-name">Position</label>
+                        <label id="positionName" class="form-salary">Salary</label>
+                        <br>
+                        <div class="lower-position-fields">
+                            <input type="hidden" id="saveIndex">
+                            <input id="inputName" class="form-input-position" type="text" name="name">
+                            <input id="inputSalary" class="form-input" type="text" name="name">
+                            <button id="createBtn" class="position-create">Create</button>
+                        </div>
+
                     </div>
 
                     <div class="search-sort-count-fields">
@@ -39,13 +42,15 @@
                             <div class="search-fields">
                                 <label id="searchName" class="form-name">Search</label>
                                 <br>
-                                <input id="searchInput" class="form-input" oninput="findVacancies()" type="text" name="name">
+                                <input id="searchInput" class="form-input" oninput="findVacancies()" type="text"
+                                    name="name">
                             </div>
 
                             <div class="sort-buttons">
                                 <button id="sortNamesBtn" class="sort-btn">A-Z 🠗</button>
                                 <button id="sortReverseNamesBtn" class="sort-btn">Z-A 🠕</button>
                             </div>
+                            <button id="saveBtn" class="position-create position-create-save">Save</button>
                         </div>
 
                     </div>
